@@ -15,7 +15,9 @@ public class AsignarPropiedadesDeSistema {
             System.getProperties().list(System.out);
 
         } catch (Exception e){
-            System.out.println("No existe el archivo = " + e);
+            //System.out.println("No existe el archivo = " + e);
+            //System.err.println("No existe el archivo = " + e);
+            System.exit(1);
         }
 
     }
